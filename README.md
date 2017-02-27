@@ -12,3 +12,10 @@ Adds a customizable preloader while the browser is evaluating your App's JS and 
 ### Demo / Docs / Configuration
 
 http://vestorly.github.io/ember-cli-preloader/
+
+### Releases
+
+#### 0.2.0
+- Fixed [disable during tests](https://github.com/Vestorly/ember-cli-preloader/issues/6)
+- Fixed [Build fails when preloader files missing.](https://github.com/Vestorly/ember-cli-preloader/issues/12)
+  - see details in issue comments ^
