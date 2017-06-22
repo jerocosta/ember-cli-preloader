@@ -3,7 +3,10 @@ import Ember from 'ember';
 const { run } = Ember;
 
 export default Ember.Object.extend({
+  fastboot: Ember.inject.service(), 
   init: function() {
+    if(this.get('fastboot.isFastBoot')) { return; }
+    
     let els = Ember.$('[data-name="preloader"]');
 
     if (els.length) {
